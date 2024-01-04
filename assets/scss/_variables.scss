@@ -1,0 +1,31 @@
+
+
+
+// ESSENTIAL COLORS 
+:root{
+    --primary: #E4DB7E;
+    --secondary: #F46E7A;
+    --white: #fff;
+    --white-1: #F5F5F5;
+    --black-1: #0D0E10;
+    --black-2: #000000;
+    --black-3: #3C434A;
+    --black-4:#0F172A;
+    --navy-1: #F1FAFF;
+    --gray-1: #303030;
+    --gray-2:#CFCFCF;
+    --gray-3:#354357;
+    --gray-4:#999999;
+    --black-2: #03041C;
+    --theme-0:#FF9345;
+    --theme-1: #FCEFEA;
+    --theme-2: linear-gradient(90deg, #B16CEA 0%, #FF5E69 45.83%, #FFA84B 100%);
+    --theme-3: #4C30F6;
+    --theme-4:#80376B;
+}
+
+
+// Font Family 
+
+$bodyFont : 'Manrope', sans-serif;
+$headingFont: 'Inter', sans-serif;

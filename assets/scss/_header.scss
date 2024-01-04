@@ -1,0 +1,231 @@
+/*
+
+==================================
+    2. header
+==================================
+
+*/
+
+.mariox{
+   &__header{
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      @include mq(xl){
+         left: 36px;
+         right: 36px;
+      }
+      @include mq(lg){
+         display: none;
+      }
+      &-wrapper{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 25px 40px;
+         background-color: var(--white);
+         border: 1px solid var(--black-2);
+         border-radius: 10px;
+         position: relative;
+         max-width: 1140px;
+         margin: auto;
+         &::before{
+            content: "";
+            position: absolute;
+            right: -7px;
+            bottom: -10px;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            background-color: var(--black-2);
+            z-index: -2;
+         }
+      }
+      &-menu{
+         li{
+            display: inline-block;
+            margin-right: 40px;
+            position: relative;
+            &:hover{
+               .submenu{
+                  opacity: 1;
+                  visibility: visible;
+                  top: 180%;
+               }
+            }
+            &:last-child{
+               margin-right: 0;
+            }
+            a{
+               font-family: $headingFont;
+               font-weight: 700;
+               font-size: 16px;
+               line-height: 1.1;
+               color: var(--black-1);
+               text-transform: capitalize;
+               &:hover{
+                  color: var(--secondary);
+               }
+            }
+         }
+      }
+      &-right{
+         display: flex;
+         gap: 16px;
+         align-items: center;
+      }
+   }
+}
+
+// header two 
+
+.mariox{
+   &__two{
+      &-wrapper{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: absolute;
+         top: 40px;
+         left: 0;
+         right: 0;
+         max-width: 1110px;
+         margin: auto;
+         z-index: 99999;
+         @include mq(xl){
+            left: 60px;
+            right: 60px;
+         }
+         @include mq(lg){
+            display: none;
+         }
+      }
+   }
+}
+
+.submenu{
+   position: absolute;
+   left: 0;
+   top: 150%;
+   background-color: var(--white);
+   padding: 30px;
+   width: 200px;
+   opacity: 0;
+   visibility: hidden;
+   transition: .2s;
+   z-index: 999;
+   @include mq(md){
+      position: static;
+      opacity: 1;
+      visibility: visible;
+   }
+   li{
+      display: block;
+      margin-bottom: 10px;
+      &:last-child{
+         margin-bottom: 0;
+      }
+      a{
+         text-transform: capitalize;
+      }
+   }
+}
+/*
+    mobile menu css
+*/
+.responsive_mobile_menu{
+   background-color: var(--black-2);
+   @media (min-width:991px){
+       display: none;
+   }
+}
+.mobile_wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px 0;
+}
+.mobile_info_open {
+   max-width: 300px;
+   background: var(--white);
+   padding: 23px;
+   position: fixed;
+   top: 0;
+   height: 100%;
+   width: 300px;
+   left: -300px;
+   z-index: 9999999;
+   transition: .3s ease;
+}
+.mobile_info_open.show{
+   left: 0;
+}
+.mobile_header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 30px;
+}
+.mobile-logo img {
+   width: 100px;
+}
+.mobile_left .logo img {
+   filter: brightness(100);
+}
+.mobile-menu li{
+   display: block;
+   margin-bottom: 15px;
+   border-bottom: 1px solid #ededed;
+   padding-bottom: 10px;
+}
+
+.mobile-menu li a {
+   color: var(--black-2);
+}
+
+// stickey header 
+
+.header-sticky.sticky {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   background: var(--white);
+   z-index: 99;
+   padding: 15px 0;
+}
+
+// create overlay 
+.offcanvas-overlay{
+   position: fixed;
+   background-color: rgba(0,0,0,.5);
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   visibility: hidden;
+}
+.offcanvas-overlay.overlay-open{
+   opacity: 1;
+   visibility: visible;
+}
+.mobile-logo img {
+   width: 70px;
+}
+
+// stickey 
+.mariox__header.sticky {
+   position: fixed;
+   z-index: 999999999;
+}
+.mariox__two-wrapper.sticky {
+   position: fixed;
+   z-index: 9999;
+   background: #ffff;
+   padding: 20px;
+   border-radius: 15px;
+   top: 3px;
+}

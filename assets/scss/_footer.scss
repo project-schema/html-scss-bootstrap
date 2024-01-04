@@ -1,0 +1,81 @@
+
+/*
+
+==================================
+    10. footer
+==================================
+
+*/
+.mariox{
+   &__footer{
+      padding: 90px 0;
+      @include mq(md){
+         padding-bottom: 0;
+         padding-top: 50px;
+      }
+      &-item{
+         img{
+            padding-bottom: 20px;
+         }
+         h4{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 2;
+            color: #1C1D1F;
+         }
+         p{
+            color: #C4C4C4;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #C4C4C4;
+         }
+      }
+      &-item{
+         position: relative;
+      }
+      &-list{
+         @include mq(md){
+            padding-bottom: 15px;
+         }
+         li{
+            a{
+               font-weight: 400;
+               font-size: 15px;
+               line-height: 42px;
+               color: #1C1D1F;
+               &:hover{
+                  color: var(--secondary);
+               }
+            }
+         }
+      }
+   }
+}
+
+.marioxx{
+   &__footer{
+      background-color: #12111A;
+      padding: 100px 0;
+      @include mq(md){
+         padding: 50px 0;
+      }
+      &-item{
+         h4{
+            color: var(--white);
+         }
+      }
+      &-list{
+         li{
+            a{
+               color: rgba(255,255,255,.4);
+            }
+         }
+      }
+   }
+}
+.marioxx__footer-about {
+   @include mq(md){
+      margin-bottom: 40px;
+   }
+}

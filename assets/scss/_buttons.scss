@@ -1,0 +1,119 @@
+.primary-btn{
+   display: inline-block;
+   background-color: var(--black-1);
+   padding: 13px 28px;
+   border-radius: 5px;
+   color: var(--white);
+   font-family: $headingFont;
+   font-weight: 700;
+   font-size: 14px;
+   transition: .3s;
+   border: 1px solid transparent;
+   &:hover{
+      background-color: var(--white);
+      color: var(--black-1);
+      border: 1px solid var(--black-1);
+   }
+}
+.primary-btn-borderless{
+   font-family: $headingFont;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 1.1;
+   color: var(--black-2);
+   transition: .3s;
+   &:hover{
+      color: var(--secondary);
+   }
+}
+
+.secondary-btn{
+   display: inline-block;
+   padding: 26px 60px;
+   background: var(--theme-2);
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 1;
+   text-align: center;
+   color: var(--white);
+   font-family: $headingFont;
+   border-radius: 15px;
+   @include mq(sm){
+      padding: 20px;
+   }
+   &:hover{
+      color: var(--white);
+   }
+}
+.contact-btn{
+   @extend .secondary-btn;
+   padding: 12px 20px;
+   font-size: 14px;
+}
+.plan-btn{
+   display: inline-block;
+   padding: 20px 50px;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 1;
+   text-align: center;
+   color: var(--black-1);
+   font-family: $headingFont;
+   border-radius: 15px;
+   border: 1px solid var(--black-1);
+   &:hover{
+      color: var(--white);
+      background: var(--theme-2);
+      border-radius: 15px;
+      border: 1px solid transparent;
+   } 
+}
+
+// index two 
+
+.primary-blue-btn{
+   @extend .primary-btn;
+   background-color: var(--theme-3);
+}
+.primary-blue-btn-2{
+   @extend .primary-btn;
+   background-color: #4F4BCB;
+}
+.secondary-black-btn{
+   @extend .secondary-btn;
+   font-family: $headingFont;
+   background: var(--black-1);
+   z-index: 9;
+   font-weight: 700;
+   font-size: 18px;
+   position: relative;
+   border: 1px solid transparent;
+   &:hover{
+      color: var(--white);
+      border: 1px solid var(--white);
+      border-radius: 15px;
+   } 
+}
+.secondary-white-btn{
+   @extend .secondary-btn;
+   background: var(--white);
+   z-index: 9;
+   position: relative;
+   color: #4F4BCB;
+   border: 1px solid transparent;
+   &:hover{
+      background-color: var(--black-1);
+      color: var(--white);
+      border: 1px solid var(--black-1);
+      border-radius: 15px;
+   } 
+}
+
+
+.primary-blue-btn-hometwo {
+   @extend .primary-blue-btn;
+   padding: 8px 28px;
+}
+iframe{
+   border-radius: 15px;
+}

@@ -1,0 +1,499 @@
+/*
+
+==================================
+    3. hero
+==================================
+
+*/
+
+.mariox{
+   &__hero{
+      background: var(--theme-1);
+      padding: 305px 0;
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 306px;
+      @include mq(xl){
+         padding: 205px 42px;
+         padding-bottom: 100px;
+      }
+      @include mq(md){
+         padding: 30px 42px;
+         display: none;
+      }
+      @include mq(sm){
+         padding: 50px 0;
+         padding-bottom: 140px;
+      }
+      &-mainImg{
+         position: absolute;
+         right: 120px;
+         top: 160px;
+         animation: float-bob-y 2s infinite;
+         @include mq(xl-1){
+            width: 40%;
+         }
+         @include mq(xl){
+            top: 200px;
+            right: 50px;
+         }
+         @include mq(lg){
+            display: none;
+         }
+      }
+      &-shape1{
+         position: absolute;
+         left: 0;
+         top: 35px;
+         @include mq(xl-1){
+            width: 10%;
+         }
+         @include mq(xl){
+            width: 5%;
+         }
+         @include mq(md){
+            display: none;
+         }
+      }
+      &-shape3{
+         position: absolute;
+         top: 567px;
+         left: 155px;
+         @include mq(xl){
+            display: none;
+         }
+      }
+      &-shape2{
+         position: absolute;
+         right: 120px;
+         top: 150px;
+         @include mq(md){
+            display: none;
+         }
+      }
+      &::before{
+         content: "";
+         position: absolute;
+         left: -27%;
+         bottom: -400px;
+         width: 150%;
+         height: 478px;
+         background-color: var(--white);
+         border-radius: 70%;
+      }
+      &-left{
+         position: relative;
+         z-index: 9999;
+      }
+      &-wrap{
+         overflow: hidden;
+      }
+      &-title{
+         font-weight: 700;
+         font-size: 70px;
+         line-height: 1.3;
+         color: var(--black-1);
+         overflow: hidden;
+         @include mq(xl){
+            font-size: 50px;
+         }
+         @include mq(sm){
+            font-size: 30px;
+         }
+         span{
+            background: linear-gradient(90deg, #B16CEA 0%, #FF5E69 45.83%, #FFA84B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+         }
+      }
+      &-dis{
+         font-weight: 400;
+         font-size: 24px;
+         line-height: 1.8;
+         color: var(--black-3);
+         padding: 25px 0 30px 0;
+         br{
+            @include mq(xl){
+               display: none;
+            }  
+         }
+         @include mq(sm){
+            font-size: 18px;
+            padding-top: 0;
+            padding-bottom: 0;
+         }
+      }
+      &-right{
+         img{
+            animation: float-bob-y 2s infinite;
+            @include mq(sm){ 
+               padding-top: 50px;
+               width: 75%;
+            }
+         }
+      }
+   }
+   &__rating{
+      padding: 100px;
+      padding-top: 184px;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      @include mq(xl){
+         padding-top: 90px;
+      }
+      @include mq(md){
+         padding: 50px 0;
+      }
+      @include mq(sm){
+         padding: 0;
+         padding-top: 50px;
+      }
+      &-wrapper{
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         grid-gap: 93px;
+         @include mq(sm){
+            grid-template-columns: auto;
+            grid-gap: 10px;
+            padding-bottom: 50px;
+         }
+      }
+      &-title{
+         font-weight: 700;
+         font-size: 60px;
+         line-height: 1.2;
+         text-align: center;
+         color: var(--black-1);
+         @include mq(xl){
+            font-size: 50px;
+         }
+         @include mq(sm){
+            font-size: 22px;
+         }
+      }
+      &-item{
+         padding-top: 100px;
+         text-align: center;
+         max-width: 286px;
+         @include mq(md){
+            padding-top: 50px;
+         }
+         @include mq(sm){
+            padding-top: 20px;
+            max-width: 100%;
+         }
+         img{
+            margin-bottom: 20px;
+         }
+         p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.5;
+            color: var(--black-2);
+            margin-bottom: 10px;
+         }
+      }
+      &-star{
+         a{
+            color: var(--theme-0);
+            margin-right: 10px;
+            &:last-child{
+               margin-right: 0;
+            }
+         }
+      }
+   }
+}
+
+// index two 
+
+.marioxx{
+   &__hero{
+      padding: 289px 0 550px 0;
+      position: relative;
+      overflow: hidden;
+      @include mq(xl){
+         padding: 189px 50px 450px 50px;
+      }
+      @include mq(md){
+         padding: 98px 0 155px 0;
+         display: none;
+      }
+      @include mq(sm){
+         padding: 93px 0 95px 0;
+      }
+      &-wrapper{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         @include mq(md){
+            grid-template-columns: auto;
+         }
+      }
+      &-title{
+         font-weight: 700;
+         font-size: 80px;
+         line-height: 1.2;
+         color: var(--white);
+         position: relative;
+         z-index: 9;
+         @include mq(xl){
+            font-size: 60px;
+         }
+         @include mq(sm){
+            font-size: 30px;
+         }
+      }
+      &-dis{
+         font-weight: 400;
+         font-size: 24px;
+         line-height: 2;
+         color: var(--white);
+         padding: 30px 0;
+         position: relative;
+         z-index: 9;
+         @include mq(sm){
+            padding-bottom: 0;
+            padding-top: 0;
+         }
+      }
+      &-bg1{
+         position: absolute;
+         z-index: 2;
+         width: 903px;
+         height: 904px;
+         left: 288px;
+         top: 320px;
+         background: #9B61FF;
+         filter: blur(150px);
+      }
+      &-bg2{
+         position: absolute;
+         width: 1049px;
+         height: 1049px;
+         left: -79px;
+         top: 80px;
+         background: #5CB9FA;
+         filter: blur(150px);
+         z-index: -2;
+      }
+      &-bg3{
+         position: absolute;
+         width: 621px;
+         height: 621px;
+         left: 1010px;
+         top: 612px;
+         background: #F8D998;
+         filter: blur(150px);
+         z-index: 2;
+      }
+      &-bg4{
+         position: absolute;
+         width: 930px;
+         height: 930px;
+         left: 1090px;
+         top: 203px;
+         background: #F9BFEB;
+         filter: blur(150px);
+      }
+      &-mainImg{
+         position: absolute;
+         right: 100px;
+         top: 172px;
+         z-index: 2;
+         animation: float-bob-y 3s infinite;
+         @include mq(xl){
+            right: -200px;
+         }
+         @include mq(lg){
+            display: none;
+         }
+      }
+      &-shape1{
+         left: 1589px;
+         top: 239px;
+         position: absolute;
+         z-index: 3;
+         animation: float-bob-y 3s infinite;
+
+      }
+      &-shape2{
+         left: 1115px;
+         top: 664px;
+         position: absolute;
+         z-index: 3;
+         animation: float-bob-y 5s infinite;
+      }
+      &-shape4{
+         position: absolute;
+         top: 270px;
+         left: 30px;
+         @include mq(xl){
+            display: none;
+         }
+      }
+      &-shape3{
+         left: 1276px;
+         top: 224px;
+         position: absolute;
+         z-index: 3;
+         animation: scale-up-three 5s infinite;
+      }
+   }
+}
+
+// index 3 style 
+
+.marioxxx{
+   &__hero{
+      background-color: #AE347A;
+      margin-top: 120px;
+      padding: 130px 0;
+      padding-bottom: 190px;
+      margin-left: 80px;
+      margin-right: 80px;
+      border-radius: 30px;
+      position: relative;
+      overflow: hidden;
+      @include mq(xl){
+         margin-left: 30px;
+         margin-right: 60px;
+      }
+      @media (max-width:991px){
+         display: none;
+      }
+      &-thumb{
+         img{
+            position: absolute;
+            top: 130px;
+            right: 0;
+            animation: float-bob-y 2s infinite;
+            @include mq(xl){
+               width: 50%;
+            }
+         }
+      }
+      &-shape1{
+         position: absolute;
+         left: 0;
+         top: 0;
+      }
+      &-shape2{
+         position: absolute;
+         width: 848px;
+         height: 848px;
+         left: 110px;
+         top: 470px;
+         background: #4F4BCB;
+         border-radius: 50%;
+      }
+      &-wrapper{
+         display: grid;
+         grid-template-columns: 570px;
+         @include mq(xl){
+            grid-template-columns: 500px;
+         }
+         @include mq(sm){
+            grid-template-columns: auto;
+         }
+      }
+      &-left{
+         position: relative;
+      }
+      &-title{
+         font-weight: 700;
+         font-size: 80px;
+         line-height: 1.2;
+         color: var(--white);
+         margin-bottom: 50px;
+         @include mq(xl){
+            font-size: 50px;
+         }
+         @include mq(sm){
+            font-size: 30px;
+            margin-bottom: 20px;
+         }
+      }
+      &-dis{
+         font-weight: 400;
+         font-size: 24px;
+         line-height: 1.8;
+         color: var(--white);
+         margin-bottom: 50px;
+      }
+   }
+}
+.marioxxx{
+   &__hero{
+      &-mobile{
+         background-color: #AE347A;
+         padding: 150px 0;
+         @media (min-width:991px){
+            display: none;
+         }
+         @include mq(sm){
+            padding: 50px 0;
+         }
+      }
+      &-item{
+         @include mq(md){
+            text-align: center;
+         }
+      }
+      &-mthumb{
+         margin-bottom: 30px;
+         margin-top: 30px;
+         img{
+            width: 80%;
+            margin-left: -52px;
+         }
+      }
+   }
+}
+
+// mobile version 
+.mariox{
+   &__mobile{
+      @media (min-width:769px){
+         display: none;
+      }
+      text-align: center;
+      padding: 50px 0;
+      &-mainImgMobile{
+         width: 65%;
+      }
+   }
+}
+.responsive_mobile_menu.sticky {
+   position: fixed;
+   z-index: 999999999;
+   left: 0;
+   right: 0;
+}
+.marioxx{
+   &__hmobile{
+      overflow: hidden;
+      position: relative;
+      padding: 90px 0;
+      text-align: center;
+      @media (min-width:777px){
+         display: none;
+      }
+      .marioxx__hero-bg2 {
+         background: #375adb;
+     }
+     .marioxx__hero-dis {
+         line-height: 1.5;
+      }
+      .marioxx__hero-bg1 {
+         left: 0;
+         top: 320px;
+     }
+   }
+}
+img.marioxx__hmobile-mainImg {
+   position: relative;
+   z-index: 8;
+}

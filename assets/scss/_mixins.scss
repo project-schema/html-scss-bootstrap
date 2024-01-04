@@ -1,28 +1,41 @@
-
+// media query
 @mixin mq($value) {
-    @if $value == 'xs' {
-        @media(max-width:320px){
-            @content;
-        }
-    }@else if($value == 'sm'){
-        @media (max-width:576px){
-            @content;
-        }
-    }@else if($value == 'md'){
-        @media (max-width:768px){
-            @content;
-        }
-    }@else if($value == 'lg'){
-        @media (max-width:991px){
-            @content;
-        }
-    }@else if($value == 'xl'){
-        @media (max-width:1200px){
-            @content;
-        }
-    }@else if($value == 'xl-1'){
-        @media (max-width:1500px){
-            @content;
-        }
+  @if $value == 'xs' {
+    @media (max-width: 320px) {
+      @content;
     }
+  } @else if($value == 'sm') {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if($value == 'md') {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if($value == 'lg') {
+    @media (max-width: 991px) {
+      @content;
+    }
+  } @else if($value == 'xl') {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if($value == 'xl-1') {
+    @media (max-width: 1500px) {
+      @content;
+    }
+  }
 }
+
+//----- font -----
+// init  font
+@mixin font-face($font-family, $font-path, $font-weight, $font-style: normal) {
+  @font-face {
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: url('#{$font-path}') format('truetype');
+    font-family: '#{$font-family}';
+  }
+}
+
+// grid

@@ -1,22 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-
-// google font
-$primaryFont: 'Expletus Sans', sans-serif;
-$secondaryFont: 'Poppins', sans-serif;
-
-// ESSENTIAL COLORS
+// colors
 :root {
-  --white: #ffffff; // white-stroke is same
+  --white: #ffffff;
   --secondary-2: #b9b9bf;
   --body-color-1: #0f051d;
   --primary: #7c3aed;
   --body-color-2: #f4f6f9;
   --body-color-3: #040b11;
   --brand-color-1: #f63c9b;
-  --Text-Color: #cecfd3;
+  --text-Color: #cecfd3;
   --dark: #1b1229; // --D
   --line-Color: #484848;
   --green: #21e786;
+
+  --light-shadow: 2px 2px 50px 10px rgba(246, 60, 155, 0.2);
 }
 
 html {
@@ -43,5 +39,5 @@ html {
   padding: 5rem;
   color: var(--white);
   font-size: 6.2rem;
-  text-shadow: saddlebrown;
+  @include font-family($primaryFont, 300);
 }

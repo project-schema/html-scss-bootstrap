@@ -1,2 +1,34 @@
+// if need to use cdn
+// @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@100,200,300,400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
+// declare font if [ cdn ]*
+// @mixin font-family($family, $width) {
+//   font-weight: $width;
+//   font-family: '#{$family}', sans-serif;
+// }
 
+//  font family
+$primaryFont: Poppins;
+$secondaryFont: Expletus Sans;
+
+// declare font if [ local import ]*
+@mixin font-family($family, $width) {
+  font-weight: $width;
+  font-family: '#{$family} #{$width}', sans-serif;
+}
+// declare font-face [ local import ]*
+@include font-face('Expletus Sans 100', '../font/ExpletusSans.ttf', 100);
+@include font-face('Expletus Sans 200', '../font/ExpletusSans.ttf', 200);
+@include font-face('Expletus Sans 300', '../font/ExpletusSans.ttf', 300);
+@include font-face('Expletus Sans 400', '../font/ExpletusSans.ttf', 400);
+@include font-face('Expletus Sans 500', '../font/ExpletusSans.ttf', 500);
+@include font-face('Expletus Sans 600', '../font/ExpletusSans.ttf', 600);
+@include font-face('Expletus Sans 700', '../font/ExpletusSans.ttf', 700);
+
+@include font-face('Poppins 100', '../font/Poppins-Thin.ttf', 100);
+@include font-face('Poppins 200', '../font/Poppins-ExtraLight.ttf', 200);
+@include font-face('Poppins 300', '../font/Poppins-Light.ttf', 300);
+@include font-face('Poppins 400', '../font/Poppins-Regular.ttf', 400);
+@include font-face('Poppins 500', '../font/Poppins-Medium.ttf', 500);
+@include font-face('Poppins 600', '../font/Poppins-SemiBold.ttf', 600);
+@include font-face('Poppins 700', '../font/Poppins-Bold.ttf', 700);

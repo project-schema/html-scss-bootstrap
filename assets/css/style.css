@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Manrope:wght@300;500;600;700&display=swap");
 :root {
   --Body-Color-1: #0F051D;
@@ -39,7 +40,7 @@
 
 */
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: "Expletus Sans", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
@@ -123,7 +124,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--black-2);
   font-weight: normal;
   margin-top: 0px;
@@ -283,7 +284,7 @@ a:hover {
   margin-right: 0;
 }
 .mariox__header-menu li a {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.1;
@@ -1030,7 +1031,7 @@ img.marioxx__hmobile-mainImg {
   padding: 13px 28px;
   border-radius: 5px;
   color: var(--white);
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 14px;
   transition: 0.3s;
@@ -1043,7 +1044,7 @@ img.marioxx__hmobile-mainImg {
 }
 
 .primary-btn-borderless {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.1;
@@ -1063,7 +1064,7 @@ img.marioxx__hmobile-mainImg {
   line-height: 1;
   text-align: center;
   color: var(--white);
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   border-radius: 15px;
 }
 @media (max-width: 576px) {
@@ -1088,7 +1089,7 @@ img.marioxx__hmobile-mainImg {
   line-height: 1;
   text-align: center;
   color: var(--black-1);
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   border-radius: 15px;
   border: 1px solid var(--black-1);
 }
@@ -1108,7 +1109,7 @@ img.marioxx__hmobile-mainImg {
 }
 
 .secondary-black-btn {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: var(--black-1);
   z-index: 9;
   font-weight: 700;
@@ -1355,6 +1356,10 @@ iframe {
   .marioxx__footer-about {
     margin-bottom: 40px;
   }
+}
+
+.heading {
+  font-family: "Expletus Sans", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

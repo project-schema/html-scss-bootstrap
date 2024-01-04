@@ -1,17 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
-
-// goole font
-$primaryFont : 'Expletus Sans', sans-serif;
+// google font
+$primaryFont: 'Expletus Sans', sans-serif;
 $secondaryFont: 'Poppins', sans-serif;
 
-
-
-
-// ESSENTIAL COLORS 
+// ESSENTIAL COLORS
 :root {
-    --Body-Color-1: #0F051D;
-    --Body-Color-3: #040B11;
+  --white: #ffffff; // white-stroke is same
+  --secondary-2: #b9b9bf;
+  --body-color-1: #0f051d;
+  --primary: #7c3aed;
+  --body-color-2: #f4f6f9;
+  --body-color-3: #040b11;
+  --brand-color-1: #f63c9b;
+  --Text-Color: #cecfd3;
+  --dark: #1b1229; // --D
+  --line-Color: #484848;
+  --green: #21e786;
 }
 
+html {
+  font-size: 10px;
+  @include mq(xl-1) {
+    font-size: 9px;
+  }
+  @include mq(xl) {
+    font-size: 8px;
+  }
+  @include mq(lg) {
+    font-size: 7px;
+  }
+  @include mq(md) {
+    font-size: 6px;
+  }
+  @include mq(sm) {
+    font-size: 5px;
+  }
+}
 
+.test-text {
+  background: var(--body-color-3);
+  padding: 5rem;
+  color: var(--white);
+  font-size: 6.2rem;
+  text-shadow: saddlebrown;
+}

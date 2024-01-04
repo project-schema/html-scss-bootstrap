@@ -4,7 +4,7 @@
    padding: 13px 28px;
    border-radius: 5px;
    color: var(--white);
-   font-family: $headingFont;
+   font-family: $primaryFont;
    font-weight: 700;
    font-size: 14px;
    transition: .3s;
@@ -16,7 +16,7 @@
    }
 }
 .primary-btn-borderless{
-   font-family: $headingFont;
+   font-family: $primaryFont;
    font-weight: 600;
    font-size: 16px;
    line-height: 1.1;
@@ -36,7 +36,7 @@
    line-height: 1;
    text-align: center;
    color: var(--white);
-   font-family: $headingFont;
+   font-family: $primaryFont;
    border-radius: 15px;
    @include mq(sm){
       padding: 20px;
@@ -58,7 +58,7 @@
    line-height: 1;
    text-align: center;
    color: var(--black-1);
-   font-family: $headingFont;
+   font-family: $primaryFont;
    border-radius: 15px;
    border: 1px solid var(--black-1);
    &:hover{
@@ -81,7 +81,7 @@
 }
 .secondary-black-btn{
    @extend .secondary-btn;
-   font-family: $headingFont;
+   font-family: $primaryFont;
    background: var(--black-1);
    z-index: 9;
    font-weight: 700;

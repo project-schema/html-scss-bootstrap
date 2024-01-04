@@ -38,7 +38,7 @@
 
 
 body {
-	font-family: $bodyFont;
+	font-family: $primaryFont;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 16px;
@@ -123,7 +123,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $headingFont;
+	font-family: $primaryFont;
 	color: var(--black-2);
 	font-weight: normal;
 	margin-top: 0px;

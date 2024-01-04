@@ -3,10 +3,25 @@
   "version": "1.0.0",
   "description": "how to run",
   "main": "index.js",
+  "postcss": {
+    "syntax": "postcss-scss",
+    "map": false,
+    "plugins": {
+      "css-declaration-sorter": {
+        "order": "smacss"
+      }
+    }
+  },
   "scripts": {
     "start": "sass --watch ./assets/scss/main.scss:./assets/css/style.css"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.1",
+    "prettier-plugin-css-order": "^2.0.1",
+    "prettier-plugin-organize-attributes": "^1.0.0"
+  }
 }
